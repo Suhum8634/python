@@ -1,5 +1,7 @@
-n = int(input())
-if n // 10 % 100 == 0:
-    print('YES')
-else:
-    print('NO')
+largest = int(input())  # принимаем первое число за максимальное
+for _ in range(9):
+    num = int(input())
+    if num > largest:
+        largest = num
+
+print("Наибольшее число равно", largest)
